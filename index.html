@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/">
+  <base href="./">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -37,16 +37,11 @@
     var serviceWorkerVersion = "1568276904";
   </script>
   <!-- This script adds the flutter initialization JS code -->
-  <script src="/main.dart.js" defer></script>
+  <script src="/flutter.js" defer></script>
 </head>
 <body>
   <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('flutter-first-frame', function () {
-          navigator.serviceWorker.register('flutter_service_worker.js?v=1417913520');
-          navigator.serviceWorker.register('flutter_service_worker.js');
-        });
-      }
+
       window.addEventListener('load', function(ev) {
         // Download main.dart.js
         entrypointUrl: "/main.dart.js",
@@ -65,6 +60,8 @@
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import 'https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js';
+    import 'https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js';
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
   
@@ -81,11 +78,11 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
   </script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script> -->
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script> -->
 </body>
 </html>
