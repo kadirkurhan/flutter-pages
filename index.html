@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/">
+  <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -40,25 +40,6 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyBz5JkUqYXlc-8h7rqTuK8ONpqZ_6Y0dI0",
-      authDomain: "mobile-programming-fb58c.firebaseapp.com",
-      projectId: "mobile-programming-fb58c",
-      storageBucket: "mobile-programming-fb58c.appspot.com",
-      messagingSenderId: "695058383778",
-      appId: "1:695058383778:web:0690f443e850c0a49828fb"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-  </script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -74,6 +55,24 @@
       });
     });
   </script>
-  
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBz5JkUqYXlc-8h7rqTuK8ONpqZ_6Y0dI0",
+        authDomain: "mobile-programming-fb58c.firebaseapp.com",
+        projectId: "mobile-programming-fb58c",
+        storageBucket: "mobile-programming-fb58c.appspot.com",
+        messagingSenderId: "695058383778",
+        appId: "1:695058383778:web:0690f443e850c0a49828fb"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>
